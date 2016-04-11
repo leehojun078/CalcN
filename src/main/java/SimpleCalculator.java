@@ -21,10 +21,11 @@ public class SimpleCalculator {
 		if (y!=0) //분모가 0인경우  
 			result = x/y;
 	}
-	
 	public void inc(int x) {
-  
 			result +=x;
+	}
+	public void dic(int x) {
+			result -=x;
 	}
 	
 	public int getResult() {

@@ -36,7 +36,6 @@ public class SimpleCalculatorTest {
 		assertEquals(5, calc.getResult());
 		
 	}
-	
 	@Test
 	public void testInc() {
 		SimpleCalculator calc = new SimpleCalculator();
@@ -44,6 +43,13 @@ public class SimpleCalculatorTest {
 		assertEquals(100, calc.getResult());
 		calc.inc(200);
 		assertEquals(300, calc.getResult());
+	}
+	@Test
+	public void testDic() {
+		SimpleCalculator calc = new SimpleCalculator();
+		calc.dic(100);
+		assertEquals(-100, calc.getResult());
+
 	}
 
 }
